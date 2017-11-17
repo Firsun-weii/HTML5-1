@@ -73,6 +73,19 @@ body{
 	width: 300px;
 	height: 400px;
 }
+.div50{
+	width: 665px;
+	height: 400px;
+	margin-left: 60px;
+    margin-top: 20px;
+	float: left;
+	border: 2px red solid;
+}
+.img50{
+	width: 665px;
+	height: 400px;
+}
+
 #div3{
 	height: 950px;
 	width: 1495px;
@@ -90,6 +103,11 @@ body{
 	height: 500px;
 	width: 1495px;
 	border: 2px red solid;
+}
+#div5{
+	height: 1350px;
+	width: 1495px;
+	//*border: 1px yellow solid;*/
 }
 
 
@@ -122,4 +140,18 @@ body{
 	margin-top: 10px;
 	float: left;
 	border: 1px red solid;
+}
+
+#wenyuan{
+	width: 1490px;
+	height: 500px;
+	float: left;
+}
+#wenyuan h1{
+	text-align: center;
+	font-size: 70px;
+	color: yellow;
+}
+#h1{
+	margin-top: 170px;
 }
