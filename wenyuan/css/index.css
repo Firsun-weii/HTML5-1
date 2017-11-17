@@ -3,7 +3,8 @@
 	padding: 0px;
 }
 body{
-	background-image: url(../images/background.jpg)
+	background-image: url(../images/0.jpg);
+	background-size:1500px 1400px;
 }
 #div1{
 	height: 500px;
@@ -36,7 +37,7 @@ body{
 	font-size: 30px;
 	font-family: '宋体';
 	font-weight: 300px;
-	color: red;
+	color: yellow;
 	text-align: center;
 }
 #img2{
@@ -83,7 +84,7 @@ body{
 	margin-left: 60px;
 	margin-top: 10px;
 	float: left;
-	border: 2px red solid;
+	border: 1px red solid;
 }
 #div4{
 	height: 500px;
@@ -109,7 +110,7 @@ body{
 	margin-top: 5px;
 	margin-left: 20px;
 	margin-right: 20px;
-	color: red;
+	color: blue;
 	line-height: 38px;
 }
 
@@ -120,5 +121,5 @@ body{
 	margin-left: 60px;
 	margin-top: 10px;
 	float: left;
-	border: 2px red solid;
+	border: 1px red solid;
 }
