@@ -1,0 +1,123 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+ul ol li a{
+	list-style-type: none;
+	list-style:none;
+}
+
+#logo{
+	width: 1000px;
+	height: 89px;
+	margin:0 auto;
+	border: 1px yellow solid;
+}
+
+#logo img{
+	margin: 0 auto;
+}
+#img{
+	height: 89px;
+	width: 309px;
+	padding-top: 10px;
+	float: left;
+	margin: auto 0;
+}
+#input{
+	width: 319px;
+	height: 89px;
+	text-align: right;
+	padding-top: 10px;
+	float: right;
+}
+
+#daohang{
+	width: 1000px;
+	height: 75px;
+	margin: 0 auto;
+	border: 1px black solid;
+}
+
+#daohang ul{
+	margin-top: 30px;
+}
+
+#daohang  li{
+	list-style: none;
+	margin-left: 50px;
+	position: relative;
+    float: left;
+}
+#daohang li a{
+	text-decoration: none;
+	font-weight: 900;
+	color: black;
+	font-size: 16px;
+}
+#daohang  li:hover .wei{
+     display: block;
+}
+
+#daohang li:hover .dian{
+	background-color: blue;
+}
+.wei{
+	background-color: blue;
+	text-align: center;
+	display: none;
+	position: absolute;
+	left: -50px;
+	top: 16px;
+}
+.wei li{
+	text-align: center;
+	margin-left: 40px;
+}
+
+.zhanshi{
+	display: block;
+}
+
+.wei li{
+	margin-bottom: 25px;
+	background-color: blue;
+}
+
+#banner{
+	width: 1200px;
+	height: 397px;
+	position: relative;
+	margin:0 auto;
+	overflow: hidden;
+	border: 1px red solid;
+}
+
+#bottom{
+	width: 1002px;
+	height: 73px;
+	position: absolute;
+	left: 99px;
+	bottom: 0px;
+	background-image: url(../images/bg.png);
+}
+
+#bottom>span{
+	display: block;
+	width: 50px;
+    height: 73px;
+    line-height: 73px;
+    cursor: pointer;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    float: left;
+    font-synthesis: 25px;
+}
+#next{
+	float: right;
+}
+
+.img{
+	display: none;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>河北师范大学官网</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+<!-- 	<script type="text/javascript" src="js/index.js"></script> -->
+</head>
+<body>
+    <div id="logo">
+    	<div id="img">
+    		<img src="images/logo.png">
+        </div>
+        <div id="input">
+    	    <a href="#">旧版网页</a>
+    	    <a href="#">English Version</a>
+    	    <input type="text" name="text" width="319px" height="89px">
+    	</div>
+    </div>
+    <div id="daohang">
+    	<ul class="">
+    		<li class="dian"><a href="#">首页</a></li>
+    		<li class="dian"><a href="#">学校概况</a>
+                <ul class="wei">
+                	<li><a href="#">学校概况</a></li>
+                	<li><a href="#">学校概况</a></li>
+                	<li><a href="#">学校概况</a></li>
+                	<li><a href="#">学校概况</a></li>
+                	<li><a href="#">学校概况</a></li>
+                </ul>
+    		</li>
+    		<li class="dian"><a href="#">机构设置</a>
+                <ul class="wei">
+                	<li><a href="#">机构设置</a></li>
+                	<li><a href="#">机构设置</a></li>  
+                	<li><a href="#">机构设置</a></li>
+                    <li><a href="#">机构设置</a></li>
+              	    <li><a href="#">机构设置</a></li>
+                   <!--  <li><a href="#">机构设置</a></li> -->
+                </ul>
+    		</li>
+    		<li class="dian"><a href="#">人才培养</a>
+                <ul class="wei">
+                	<li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                </ul>
+    		</li>
+    		<li class="dian"><a href="#">科学研究</a>
+                <ul class="wei">
+                	<li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                </ul>
+    		</li>
+    		<li class="dian"><a href="#">招生就业</a>
+                <ul class="wei">
+                	<li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                </ul>
+    	    </li>
+    		<li class="dian"><a href="#">人才招聘</a>
+                <ul class="wei">
+                	<li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                </ul>
+    	    </li>
+    		<li class="dian"><a href="#">公共服务</a>
+                <ul class="wei">
+                	<li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                    <li><a href="#">人才培养</a></li>
+                </ul>
+    		</li>
+    		<li class="dian"><a href="#">校友会</a></li>
+    	</ul>
+    </div>
+    <div id="banner">
+    	<img class="img" id="img1" src="images/0.gif">
+    	<div id="bottom">
+    		<span id="prev"><</span>
+    		<span id="next" style="float: right;">></span>
+    	</div>
+    	<img class="img" src="images/1.jpg">
+    	<img class="img" src="images/2.jpg">
+    	<img class="img" src="images/3.jpg">
+    	<img class="img" src="images/4.jpg">
+    	<img class="img" src="images/5.jpg">
+    	<img class="img" src="images/6.jpg">
+    	<img class="img" src="images/7.jpg">
+    </div>
+</body>
+<script type="text/javascript">
+        var a = document.getElementById('logo');
+        var b= document.getElementsByTagName('div');
+        console.log(b[1]);
+        console.log(a);
+        var i=0;
+var imgs = document.getElementsByClassName('img');
+var dians = document.getElementsByClassName('dian');
+var wei = document.getElementsByClassName('wei');
+var a = document.getElementById('logo');
+console.log(a);
+console.log(dians[0]);
+for(var j=0;j<9;j++)
+{
+      dians[j].onclick=function(){
+        // wei[j-1].ClassName=zhanshi wei;
+      }
+   // dians[j].onclick=function(){
+   //       this.children[1].style.background-color=blue;
+   // }
+}
+
+console.log(imgs);
+function visit(){
+    imgs[i%8].style.display= 'none';
+    i++;
+    imgs[i%8].style.display='block';
+}
+setInterval(visit,2000);
+var prev=document.getElementById('prev');
+var next=document.getElementById('next');
+console.log(prev);
+prev.onclick= function(){
+    imgs[i%8].style.display= 'none';
+    i--;
+    if(i<0){
+        i=7;
+    }
+    imgs[i%8].style.display='block';
+}
+next.onclick=function(){
+    visit();
+}
+
+    </script>
+</html>
